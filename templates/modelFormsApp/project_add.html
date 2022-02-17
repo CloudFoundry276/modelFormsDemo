@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Project</title>
+</head>
+<body>
+    <h1>Add Project</h1>
+    <form method="post">
+        <table>
+            {{form.as_table}}
+            {% csrf_token %}
+        </table>
+        <input type="submit" value="Add Project" />
+    </form>
+</body>
+</html>
